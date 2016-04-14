@@ -1,0 +1,12 @@
+*.pyc
+*.pyo
+*.db
+*.xml
+.DS_Store
+.coverage
+.idea
+/static
+/media
+mysite.log
+/node-v0.12.7
+/bower_components
