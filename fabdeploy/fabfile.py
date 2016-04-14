@@ -89,6 +89,11 @@ templates = {
         "remote_path": "/etc/supervisor/conf.d/%(proj_name)s.conf",
         "reload_command": "supervisorctl reload",
     },
+    "celery": {
+        "local_path": "deploy/celery.conf",
+        "remote_path": "/etc/supervisor/conf.d/celery.conf",
+        "reload_command": "supervisorctl reload",
+    },
     "cron": {
         "local_path": "deploy/crontab",
         "remote_path": "/etc/cron.d/%(proj_name)s",
