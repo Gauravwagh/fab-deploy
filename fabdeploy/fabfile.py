@@ -368,7 +368,7 @@ def install():
             sudo("update-locale %s" % locale)
             run("exit")
     sudo("apt-get update -y -q")
-    apt("nginx libjpeg-dev python-dev python-setuptools git-core nodejs-legacy npm build-essential postgresql libpq-dev memcached supervisor")
+    apt("nginx libjpeg-dev python-dev python-setuptools git-core nodejs-legacy npm build-essential postgresql libpq-dev memcached supervisor tcl8.5 redis-server")
     sudo("easy_install pip")
     sudo("pip install virtualenv mercurial")
     sudo("npm install bower")
